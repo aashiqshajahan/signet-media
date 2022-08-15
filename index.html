@@ -757,5 +757,30 @@
   <script src="assets/js/jquery-ui.min.js"></script>
   <script src="assets/js/animated-headline.js"></script>
   <script src="assets/js/main.js"></script>
+
+  <!-- firebase hosting -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDvBk6Y0W5Xixfl_8-KSv57B8rpr271WmI",
+      authDomain: "signet-media.firebaseapp.com",
+      projectId: "signet-media",
+      storageBucket: "signet-media.appspot.com",
+      messagingSenderId: "293470814995",
+      appId: "1:293470814995:web:17c742db894f77cb42d0e6",
+      measurementId: "G-GVN0420TN9"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </body>
 </html>
