@@ -1,5 +1,12 @@
 {
   "projects": {
     "default": "signet-media"
+  },
+  "hosting": {
+        "rewrites": [ {
+      "source": "**",
+      "destination": "/index.html"
+    } ]
   }
 }
+
